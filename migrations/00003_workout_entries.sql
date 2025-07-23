@@ -20,7 +20,9 @@ CREATE TABLE IF NOT EXISTS workout_entries (
             OR duration_seconds IS NULL
         )
     )
-) -- +goose StatementEnd
+) 
+-- +goose StatementEnd
+
 -- +goose Down
 -- +goose StatementBegin
 DROP TABLE workout_entries;
